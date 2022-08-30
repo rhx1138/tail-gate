@@ -1,7 +1,40 @@
+
+* {
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .main-container {
     display: flex;
     flex-direction: row;
+    background-color: #007FFF;
+    
 }
+
+.column-1 {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.column-2 {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.column-1, h1 {
+    margin-bottom: 10px;
+}
+
+.title {
+    margin: 10px 0 10px 0;
+    color: white;
+}
+
+.login {
+    background-color: lightseagreen;
+}
+
+
 
 
 @media only screen and (max-width: 600px) {
