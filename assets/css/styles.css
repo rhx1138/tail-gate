@@ -12,8 +12,10 @@ body {
     flex-direction: row;
     padding-top: 150px;
 
+}
 
-
+.nfl-logo {
+    width: 150px;
 }
 
 .column-1 {
@@ -48,5 +50,9 @@ h1 {
     .main-container {
         flex-direction: column;
         padding-top: 80px;
+    }
+
+    .nfl-logo {
+        width: 100px;
     }
 }
