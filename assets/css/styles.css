@@ -2,44 +2,66 @@
 * {
     margin: 0 auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.main-container {
+  }
+  
+  body {
+    background-color: #007fff;
+  }
+  
+  .main-container {
     display: flex;
     flex-direction: row;
-    background-color: #007FFF;
-    
-}
-
-.column-1 {
+    padding-top: 200px;
+  }
+  
+  .nfl-logo {
+    width: 150px;
+  }
+  
+  .column-1 {
     margin: 0 auto;
     text-align: center;
-}
-
-.column-2 {
+  }
+  
+  .column-2 {
     margin: 0 auto;
+    margin-top: 60px;
     text-align: center;
-}
-
-.column-1, h1 {
+  }
+  
+  button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    display: block;
+    border: none;
+    height: 70px;
+    width: 239px;
+    border-radius: 10px;
+  }
+  
+  .column-1,
+  h1 {
     margin-bottom: 10px;
-}
-
-.title {
+  }
+  
+  .title {
     margin: 10px 0 10px 0;
     color: white;
-}
-
-.login {
-    background-color: lightseagreen;
-}
-
-
-
-
-@media only screen and (max-width: 600px) {
+  }
+  
+  .login {
+    background-color: #32de84;
+    margin-bottom: 15px;
+  }
+  
+  @media only screen and (max-width: 600px) {
     .main-container {
-        flex-direction: column;
+      flex-direction: column;
+      padding-top: 80px;
+    }
+  
+    .nfl-logo {
+      width: 200px;
     }
   }
-
+  
