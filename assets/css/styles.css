@@ -1,3 +1,8 @@
+@font-face {
+    src: url("/assets/fonts/PressStart2P.ttf");
+    font-family: Start;
+}
+
 * {
   margin: 0 auto;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -5,6 +10,10 @@
 
 body {
   background-color: #007fff;
+}
+
+.title {
+    font-family: Start;
 }
 
 .main-container {
