@@ -4,7 +4,7 @@
 
 ## A social media application
  
-The social media app named "Gameday" is the social network for sports fans around the world
+The social media app named "Gameday" is the social network for sports fans.
  
 # Link to Website
 
@@ -22,7 +22,7 @@ The social media app named "Gameday" is the social network for sports fans aroun
   * [Screenshots](#screenshots)
 
 
-# Instillation
+# Installation
 
 Find our application in the Apple Store for iOS and on the Play Store for Android.
  
