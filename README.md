@@ -4,7 +4,7 @@
 
 ## A social media application
  
-The social media app named "Gameday" is the social network for sports fans around the world.
+The social media app named "Gameday" is the social network for sports fans around the world
  
 # Link to Website
 
