@@ -9,6 +9,10 @@
 }
 
 body {
+  background-color: #007FFF;
+}
+
+.sign-up-body {
   background-image: url(/assets/images/field-side.png);
 }
 
@@ -86,7 +90,8 @@ h1 {
 }
 
 @media only screen and (max-width: 600px) {
-  body {
+ 
+  .sign-up-body {
     background-image: url(/assets/images/field.png);
   }
 
