@@ -88,6 +88,10 @@ h1 {
   color: red;
 }
 
+.login, .sign-up {
+  cursor: pointer;
+}
+
 .username {
   margin-bottom: 15px;
 }
