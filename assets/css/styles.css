@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #007fff;
+  background-image: url(/assets/images/field-side.png);
 }
 
 .title {
@@ -48,9 +48,10 @@ button {
 }
 
 input {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 22px;
+  font-family: Start;
+  font-size: 18px;
   display: block;
+  padding-left: 15px;
   border: none;
   height: 70px;
   width: 239px;
@@ -85,6 +86,10 @@ h1 {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    background-image: url(/assets/images/field.png);
+  }
+
   .main-container {
     flex-direction: column;
     padding-top: 80px;
