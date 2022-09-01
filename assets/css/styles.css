@@ -30,7 +30,7 @@ body {
 }
 
 .nfl-logo {
-  width: 150px;
+  width: 200px;
 }
 
 .column-1 {
@@ -40,7 +40,7 @@ body {
 
 .column-2 {
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 30px;
   text-align: center;
 }
 
@@ -64,6 +64,17 @@ input {
   width: 239px;
   border-radius: 10px;
 }
+
+/* need the combinator for input */
+
+input[type=text] {
+  border: 2px solid black;
+}
+
+input[type=password] {
+  border: 2px solid black;
+}
+
 
 .column-1,
 h1 {
@@ -102,6 +113,12 @@ h1 {
   width: 255px;
 }
 
+.submit-button {
+  margin-top: 15px;
+  background-color: rgb(251, 31, 38);
+  width: 255px;
+}
+
 @media only screen and (max-width: 600px) {
  
   .sign-up-body {
@@ -114,6 +131,6 @@ h1 {
   }
 
   .nfl-logo {
-    width: 200px;
+    width: 150px;
   }
 }
