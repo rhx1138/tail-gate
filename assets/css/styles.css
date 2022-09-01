@@ -99,7 +99,7 @@ h1 {
   color: red;
 }
 
-.login, .sign-up, .back-button {
+.login, .sign-up, .back-button, .submit-button, .login-button {
   cursor: pointer;
 }
 
@@ -116,6 +116,12 @@ h1 {
 .submit-button {
   margin-top: 15px;
   background-color: rgb(251, 31, 38);
+  width: 255px;
+}
+
+.login-button {
+  margin-top: 15px;
+  background-color: #007FFF;
   width: 255px;
 }
 
