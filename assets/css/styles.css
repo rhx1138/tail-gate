@@ -71,14 +71,14 @@ input {
 }
 
 /* need the combinator for input */
-
+/* 
 input[type=text] {
-  /* border: 2px solid black; */
+  border: 2px solid black;
 }
 
 input[type=password] {
-  /* border: 2px solid black; */
-}
+  border: 2px solid black;
+} */
 
 
 .column-1,
@@ -133,7 +133,7 @@ h1 {
 @media only screen and (max-width: 600px) {
  
   .sign-up-body {
-    background-image: url(/assets/images/field-dark.png);
+    background-image: url(/assets/images/lights-bg1.jpg);
   }
 
   .main-container {
