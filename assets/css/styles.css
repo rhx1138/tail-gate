@@ -12,8 +12,8 @@ body {
   background-color: #007FFF;
 }
 
-.sign-up-body {
-  background: url(/assets/images/4802508.jpg) #217b00ff no-repeat center center fixed;
+body {
+  background: url(/assets/images/lights-bg1.jpg) #217b00ff no-repeat center fixed;
 }
 
 .title {
@@ -30,7 +30,7 @@ body {
 }
 
 .nfl-logo {
-  width: 200px;
+  width: 300px;
 }
 
 .column-1 {
@@ -38,10 +38,15 @@ body {
   text-align: center;
 }
 
+
 .column-2 {
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 50px;
   text-align: center;
+}
+
+.index-column-2 {
+  margin-top: 130px;
 }
 
 button {
@@ -68,11 +73,11 @@ input {
 /* need the combinator for input */
 
 input[type=text] {
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 input[type=password] {
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 
