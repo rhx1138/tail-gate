@@ -16,6 +16,10 @@ body {
   background: url(/assets/images/lights-bg1.jpg) #217b00ff no-repeat center fixed;
 }
 
+.profile {
+  background: white;
+}
+
 .title {
   font-family: Start;
   text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black,
@@ -29,8 +33,17 @@ body {
   padding-top: 200px;
 }
 
+/* need fix to clipping issue */
 .nfl-logo {
   width: 300px;
+  border-radius: 50%;
+  border: none;
+  background-color: #007FFF;
+  padding: 25px;
+}
+
+.profile-name {
+  font-size: 50px;
 }
 
 .column-1 {
