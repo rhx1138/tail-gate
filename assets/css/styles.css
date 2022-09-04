@@ -36,6 +36,9 @@ body {
 /* need fix to clipping issue */
 .nfl-logo {
   width: 300px;
+}
+.profile-logo {
+  width: 300px;
   border-radius: 50%;
   border: none;
   background-color: #007FFF;
@@ -169,10 +172,20 @@ h1 {
   }
 
   .column-2 {
+    display: flex;
     margin-top: 24px;
+
   }
 
   .nfl-logo {
     width: 150px;
+  }
+
+  .profile-logo {
+    width: 185px;
+    border-radius: 50%;
+    border: none;
+    background-color: #007FFF;
+    padding: 25px;
   }
 }
