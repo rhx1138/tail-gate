@@ -117,7 +117,21 @@ h1 {
   color: red;
 }
 
-.login, .sign-up, .back-button, .submit-button, .login-button {
+.buds {
+  color: white;
+  background-color: #32de84;
+  margin-bottom: 15px;
+  font-family: Start;
+  color: dark grey;
+}
+
+.games {
+  color: white;
+  font-family: Start;
+  background-color: rgb(48, 181, 0);
+}
+
+.login, .sign-up, .back-button, .submit-button, .login-button, .buds, .games {
   cursor: pointer;
 }
 
