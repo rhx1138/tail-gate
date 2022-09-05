@@ -16,6 +16,10 @@ body {
   background: url(/assets/images/lights-bg1.jpg) #217b00ff no-repeat center fixed;
 }
 
+.profile {
+  background: white;
+}
+
 .title {
   font-family: Start;
   text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black,
@@ -27,15 +31,35 @@ body {
   display: flex;
   flex-direction: row;
   padding-top: 200px;
+  
 }
 
+/* need fix to clipping issue */
 .nfl-logo {
   width: 300px;
+}
+
+img {
+  border-radius: inherit;
+}
+
+.profile-logo {
+  width: 300px;
+  border-radius: 50%;
+  background-color: #007FFF;
+  padding: 20px;
+ 
+ 
+}
+
+.profile-name {
+  font-size: 50px;
 }
 
 .column-1 {
   margin: 0 auto;
   text-align: center;
+  overflow: hidden;
 }
 
 
@@ -43,6 +67,7 @@ body {
   margin: 0 auto;
   margin-top: 50px;
   text-align: center;
+  
 }
 
 .index-column-2 {
@@ -104,7 +129,21 @@ h1 {
   color: red;
 }
 
-.login, .sign-up, .back-button, .submit-button, .login-button {
+.buds {
+  color: white;
+  background-color: #32de84;
+  margin-bottom: 15px;
+  font-family: Start;
+  color: dark grey;
+}
+
+.games {
+  color: white;
+  font-family: Start;
+  background-color: rgb(48, 181, 0);
+}
+
+.login, .sign-up, .back-button, .submit-button, .login-button, .buds, .games {
   cursor: pointer;
 }
 
@@ -141,11 +180,21 @@ h1 {
     padding-top: 80px;
   }
 
-  .column-2 {
+  .column-2-profile {
+    display: flex;
     margin-top: 24px;
+
   }
 
   .nfl-logo {
     width: 150px;
+  }
+
+  .profile-logo {
+    width: 185px;
+    border-radius: 50%;
+    border: none;
+    background-color: #007FFF;
+    padding: 25px;
   }
 }
