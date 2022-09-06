@@ -65,17 +65,25 @@ img {
 
 .profile-name-buds {
   font-size: 50px;
+  font-family: Start;
+}
+
+nav {
+
+  margin-top: 40px;
 }
 
 
 ul {
   display: flex;
   flex-direction: row;
+  padding-right: 53px;
 
 }
 
 li {
   font-size: 20px;
+  font-family: Start;
 }
 
 .column-1 {
