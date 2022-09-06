@@ -214,6 +214,17 @@ h1 {
   width: 255px;
 }
 
+/* profile pages */
+
+.main-profile-wrapper {
+  display: flex;
+  margin-top: 40px;
+}
+
+.profile-pic {
+  width: 300px;
+}
+
 @media only screen and (max-width: 600px) {
  
   .sign-up-body {
@@ -237,6 +248,12 @@ h1 {
 
   .nfl-logo {
     width: 150px;
+  }
+
+  .main-profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
   }
 
   .profile-logo {
