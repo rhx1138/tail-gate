@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "The social media app named \"Gameday\" is the social network for sports fans.",
   "main": "server.js",
-  "type": "module",
   "scripts": {
     "test": "jest",
     "seeds": "node seeds/index.js"
