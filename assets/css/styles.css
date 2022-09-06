@@ -20,6 +20,15 @@ body {
   background: white;
 }
 
+.buds {
+  background: white;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
 .title {
   font-family: Start;
   text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black,
@@ -48,12 +57,25 @@ img {
   border-radius: 50%;
   background-color: #007FFF;
   padding: 20px;
- 
- 
 }
 
 .profile-name {
   font-size: 50px;
+}
+
+.profile-name-buds {
+  font-size: 50px;
+}
+
+
+ul {
+  display: flex;
+  flex-direction: row;
+
+}
+
+li {
+  font-size: 20px;
 }
 
 .column-1 {
@@ -196,5 +218,11 @@ h1 {
     border: none;
     background-color: #007FFF;
     padding: 25px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  
   }
 }
