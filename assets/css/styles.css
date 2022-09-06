@@ -218,11 +218,48 @@ h1 {
 
 .main-profile-wrapper {
   display: flex;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .profile-pic {
   width: 300px;
+}
+
+.full-name {
+  font-family: Start;
+  color: black;
+  margin-bottom: 20px;
+
+}
+
+.left-column {
+  margin-bottom: 25px;
+}
+
+.right-column {
+  text-align: left;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: Start;
+  color: black;
+}
+
+.centered {
+  margin-top: 50px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.bud-pic {
+  width: 200px;
 }
 
 @media only screen and (max-width: 600px) {
