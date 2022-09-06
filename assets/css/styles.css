@@ -88,10 +88,18 @@ li {
   font-family: Start;
 }
 
-a.current {
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+  font-family: Start;
+}
+
+.current {
   color: rgb(242, 255, 0);
   font-family: Start;
 }
+
 
 .column-1 {
   margin: 0 auto;
