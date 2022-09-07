@@ -16,9 +16,23 @@ body {
   background: url(/assets/images/lights-bg1.jpg) #217b00ff no-repeat center fixed;
 }
 
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
+input[value="Login"] { 
+  animation: blinker 1s linear infinite;
+}​
+
 .profile {
   background: white;
 }
+
+
 
 .buds {
   background: white;
@@ -141,13 +155,9 @@ input {
 }
 
 /* need the combinator for input */
-/* 
-input[type=text] {
-  border: 2px solid black;
-}
 
-input[type=password] {
-  border: 2px solid black;
+/* input[type=text] {
+  border: 2px solid red;
 } */
 
 
@@ -162,11 +172,15 @@ h1 {
 }
 
 .login {
-  background-color: #32de84;
+  background-color: transparent;
   margin-bottom: 15px;
   font-family: Start;
-  color: dark grey;
+  color: #F7FF1F;
   /* text-shadow: 0px 0px 5px black; */
+}
+
+input.login {
+  font-size: 40px;
 }
 
 .sign-up {
