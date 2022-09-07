@@ -230,6 +230,10 @@ input.login {
 
 /* profile pages */
 
+header {
+  margin-top: 20px;
+}
+
 .main-profile-wrapper {
   display: flex;
   margin-top: 60px;
