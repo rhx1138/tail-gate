@@ -1,178 +1,386 @@
+@font-face {
+  src: url("/fonts/PressStart2P.ttf");
+  font-family: Start;
+}
+
 * {
-    box-sizing: border-box;
-  }
+  margin: 0 auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: #007FFF;
+}
+
+body {
+  background: url(/images/lights-bg1.jpg) #217b00ff no-repeat center fixed;
+}
+
+.blink {
+  animation: blinker 4s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
+input[value="Login"] { 
+  animation: blinker 1s step-start infinite;
+}​
+
+.profile {
+  background: white;
+}
+
+
+
+.buds {
+  background: white;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+
+.title {
+  font-family: Start;
+  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black,
+    -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black,
+    0.05em 0.05em black;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 200px;
   
-  body, html {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-    color: #333;
-  }
+}
+
+/* need fix to clipping issue */
+.nfl-logo {
+  width: 300px;
+}
+
+img {
+  border-radius: inherit;
+}
+
+.profile-logo {
+  width: 300px;
+  border-radius: 50%;
+  background-color: #007FFF;
+  /* padding: 20px; */
+  margin-bottom: 18px;
+}
+
+.profile-name {
+  font-size: 50px;
+}
+
+.profile-name-buds {
+  font-size: 50px;
+  font-family: Start;
+}
+
+nav {
+
+  margin-top: 40px;
+}
+
+
+ul {
+  display: flex;
+  flex-direction: row;
+  padding-right: 53px;
+
+}
+
+li {
+  font-size: 20px;
+  font-family: Start;
+}
+
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+  font-family: Start;
+}
+
+.current {
+  color: rgb(242, 255, 0);
+  font-family: Start;
+}
+
+
+.column-1 {
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.column-2 {
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
   
-  a {
-    text-decoration: none;
-    color: #225ca3;
-    font-weight: bold;
-    transition: color .1s;
+}
+
+.index-column-2 {
+  margin-top: 130px;
+}
+
+button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 22px;
+  display: block;
+  border: none;
+  height: 70px;
+  width: 239px;
+  border-radius: 10px;
+}
+
+input {
+  font-family: Start;
+  font-size: 18px;
+  display: block;
+  padding-left: 15px;
+  border: none;
+  height: 70px;
+  width: 239px;
+  border-radius: 10px;
+}
+
+/* need the combinator for input */
+
+/* input[type=text] {
+  border: 2px solid red;
+} */
+
+
+.column-1,
+h1 {
+  margin-bottom: 10px;
+}
+
+.title {
+  margin: 10px 0 10px 0;
+  color: white;
+}
+
+.login {
+  background-color: transparent;
+  margin-bottom: 15px;
+  font-family: Start;
+  color: #F7FF1F;
+  /* text-shadow: 0px 0px 5px black; */
+}
+
+input.login {
+  font-size: 40px;
+}
+
+.sign-up {
+  font-family: Start;
+  color: red;
+}
+
+.buds {
+  color: white;
+  background-color: #32de84;
+  margin-bottom: 15px;
+  font-family: Start;
+  color: dark grey;
+}
+
+.games {
+  color: white;
+  font-family: Start;
+  background-color: rgb(48, 181, 0);
+}
+
+.login, .sign-up, .back-button, .submit-button, .login-button, .buds, .games {
+  cursor: pointer;
+}
+
+.username {
+  margin-bottom: 15px;
+}
+
+.back-button {
+  margin-top: 15px;
+  background-color: #32de84;
+  width: 255px;
+}
+
+.submit-button {
+  margin-top: 15px;
+  background-color: rgb(251, 31, 38);
+  width: 255px;
+}
+
+.login-button {
+  margin-top: 15px;
+  background-color: #007FFF;
+  width: 255px;
+}
+
+/* profile pages */
+
+.main-profile-wrapper {
+  display: flex;
+  margin-top: 60px;
+}
+
+.profile-pic {
+  width: 300px;
+  /* border: 3px solid black; */
+  -moz-box-shadow: 10px 10px 5px black;
+  -webkit-box-shadow: 10px 10px 5px black;
+  box-shadow: 10px 10px 5px black;
+  -moz-border-radius:25px;
+  -webkit-border-radius:25px;
+  border-radius:25px;
+}
+
+.full-name {
+  font-family: Start;
+  color: black;
+  margin-bottom: 20px;
+
+}
+
+.left-column {
+  margin-bottom: 25px;
+}
+
+.right-column {
+  text-align: left;
+}
+
+.right-column-games {
+  text-align: center;
+}
+
+.middle-column {
+  padding-top: 100px;
+  font-size: 50px;
+}
+
+.game-date {
+  font-size: 19px;
+
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: Start;
+  color: black;
+}
+
+.centered {
+  margin-top: 50px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.bud-pic {
+  width: 250px;
+}
+
+footer {
+  background-color: #00b156;
+  box-shadow: 0 50vh 0 50vh #00b156;
+  padding-top: 60px;
+}
+
+.back {
+  font-family: Start;
+  font-size: 25px;
+}
+
+.games-text {
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+ 
+  .sign-up-body {
+    background-image: url(/images/lights-bg1.jpg);
   }
-  
-  a:hover {
-    color: #3486eb;
+
+  .main-container {
+    flex-direction: column;
+    padding-top: 80px;
   }
-  
-  button {
-    background-color: #225ca3;
-    border: 0;
-    padding: 1%;
-    color: white;
-    font-weight: bold;
-    transition: background-color .1s;
-    cursor: pointer;
-    border-radius: 5px;
+
+  li {
+    margin: 10px;
   }
-  
-  button:hover {
-    background-color: #3486eb;
+
+  .column-2-profile {
+    display: flex;
+    margin-top: 24px;
+
   }
-  
-  .post-list {
-    margin: 0;
-    padding: 0;
+
+  .nfl-logo {
+    width: 150px;
   }
-  
-  textarea, input {
-    padding: .5%;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  textarea:focus, input:focus {
-    outline: none;
-    border: 1px solid #3486eb;
-  }
-  
-  textarea {
-    min-width: 40%;
-    min-height: 100px;
-  }
-  
-  form > div {
-    margin-bottom: 2%;
-  }
-  
-  form label {
-    display: block;
-  }
-  
-  .wrapper {
-    width: 100%;
-    min-height: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+
+
+  .main-profile-wrapper {
     display: flex;
     flex-direction: column;
+    margin-top: 40px;
   }
+
+ nav {
+  margin-top: 15px;
+ }
   
-  header {
-    border-bottom: 1px solid #ccc;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1%;
+  .profile-name-buds {
+    font-size: 45px;
   }
-  
-  header h1 {
-    font-size: 1em;
-  }
-  
-  main {
-    flex: 1;
-    padding: 2% 4%;
-  }
-  
-  .btn-no-style {
-    background: none;
+
+  .profile-logo {
+    width: 185px;
+    border-radius: 50%;
     border: none;
-    padding: 0;
-    cursor: pointer;
-    text-decoration: none;
-    color: #225ca3;
-    font-size: 100%;
-    font-weight: bold;
-    transition: color .1s;
-    margin-left: 16px;
+    background-color: #007FFF;
+    /* padding: 25px; */
+    margin-bottom: 10px;
   }
-  
-  .btn-no-style:hover {
-    background: none;
-    color: #3486eb;
+
+  .middle-column {
+    padding-top: 25px;
+    font-size: 50px;
   }
-  
-  .delete-post-btn {
-    background-color: #d41414;
-  }
-  
-  .delete-post-btn:hover {
-    background-color: #ff643d;
-  }
-  
-  .post {
-    margin-bottom: 2%;
-    line-height: 150%;
-  }
-  
-  .post .title span {
-    font-style: italic;
-    font-size: 90%;
-    color: #7d7d7d;
-  }
-  
-  .edit-link {
-    display: block;
-    margin: -1.5% 0 2% 0;
-  }
-  
-  .upvote-btn {
-    background-color: #197d0f;
-    transition: background-color .1s;
-  }
-  
-  .upvote-btn:hover {
-    background-color: #1f9c13;
-  }
-  
-  .comment-form {
-    margin-bottom: 5%;
-  }
-  
-  .comment {
-    padding: 1%;
-    margin-bottom: 1%;
-  }
-  
-  .comment:nth-child(odd) {
-    background-color: #fff5eb;
-  }
-  
-  .comment .meta {
-    font-size: 90%;
-    margin-bottom: .5%;
-    opacity: .6;
-  }
-  
-  .new-post-form input {
-    width: 300px;
-  }
-  
-  .edit-post-form {
-    margin-bottom: 5%;
-  }
-  
-  footer {
-    border-top: 1px solid #ccc;
+
+  ul {
     display: flex;
-    justify-content: center;
-    padding: 1%;
-    font-size: 110%;
+    flex-direction: column;
+  
   }
+
+  .right-column {
+    margin-left: 20px;
+  }
+
+  .right-column-games {
+    margin-left: 45px;
+  }
+
+  footer {
+    padding-top: 20px;
+  }
+}
