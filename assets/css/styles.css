@@ -294,6 +294,10 @@ footer {
   font-size: 25px;
 }
 
+.games-text {
+  font-size: 25px;
+}
+
 @media only screen and (max-width: 600px) {
  
   .sign-up-body {
