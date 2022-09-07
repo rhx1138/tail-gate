@@ -17,7 +17,7 @@ body {
 }
 
 .blink {
-  animation: blinker 1s linear infinite;
+  animation: blinker 4s linear infinite;
 }
 
 @keyframes blinker {  
@@ -25,7 +25,7 @@ body {
 }
 
 input[value="Login"] { 
-  animation: blinker 1s linear infinite;
+  animation: blinker 1s step-start infinite;
 }​
 
 .profile {
