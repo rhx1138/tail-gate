@@ -1,0 +1,25 @@
+<%- include('partials/header.ejs') %>
+<body class="sign-up-body">
+  <div class="main-container">
+    <div class="column-1">
+      <h1 class="title">Gameday</h1>
+      <img class="nfl-logo" src="/assets/images/nfl.png" />
+    </div>
+    <div class="column-2">
+        <% if (message) { %>
+            <div style="color:red"><%= message %></div>
+            <% } %>
+    <form method="post" action="/login" id="loginForm">
+      <!-- <label for="uname"><b>Username</b></label> -->
+      <input class="username" type="text" placeholder="Username" name="username" required />
+
+      <!-- <label for="psw"><b>Password</b></label> -->
+      <input type="password" placeholder="Password" name="password" required />
+      <!-- login button -->
+      <input class="login-button" type="submit" value="Login" />
+      <!-- back button -->
+      <input class="back-button" type="button" onClick="location.href='/'" value="Back Home" />
+    </form>
+    </div>
+  </div>
+</body>
