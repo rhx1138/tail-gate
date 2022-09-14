@@ -13,15 +13,16 @@
 
 <form class="login-form">
   <div>
-    <label for="email-login">email:</label>
-    <input type="text" id="email-login" />
+    <input class="username" type="text" placeholder="email" name="uname" id="email-login" />
   </div>
   <div>
-    <label for="password-login">password:</label>
-    <input type="password" id="password-login" />
+    <input type="password" placeholder="Password" name="psw" id="password-login" />
   </div>
   <div>
-    <button type="submit">login</button>
+    <button class="login-button" type="submit">Login</button>
+  </div>
+  <div>
+    <button class="back-button" type="button" onClick="location.href='/'">Back Home</button>
   </div>
 </form>
 
