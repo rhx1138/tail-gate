@@ -1,47 +1,22 @@
 <%- include('partials/header.ejs') %>
 
-<body class="buds">
-    <header>
-    <img class="profile-logo" src="/assets/images/giants.png" />
-          <h1 class="profile-name-buds">Bobby B.</h1>
-          <% if (data && data.username) { %>
-            <div style="font-size: 15px;"><a href="/logout">Logout</a></div>
-            <% } %>
-    </header>
-    <nav>
-        <ul>
-          
-            <li><a href="/profile.html" class="current">Profile</a></li> 
-            <li><a href="/games.html">Games</a></li> 
-            <li><a href="/buds.html">Buds</a></li> 
-        </ul>
-    </nav>
-    <!-- wrapper -->
-    <div class="main-profile-wrapper">
-      <!-- image left -->
-      <div class="left-column">
-      <img class="profile-pic" src="/assets/images/profile-pic1.png">
-    </div>
-    <div class="right-column">
-      <h1 class="full-name">
-        Bobby Bradly
-        <%= data.username %>
+  <body class="profile">
+    <div class="main-container">
+      <div class="column-1">
+        <% if (data && data.username) { %>
+          <img class="profile-logo" src="/assets/images/giants.png" />
+          <h1 class="profile-name">
+            <%= data.username %>
+              <div style="font-size: 15px;"><a href="/logout">Logout</a></div>
+              <% } %>
+      </div>
       </h1>
-      <p>New York Giants # 1 fan</p>
-      <p>Attended: 15 Games</p>
-      <p>City: Indianpolis, IN</p>
-      <p>AM: Syracuse</p>
+      <div class="column-2 column-2-profile index-column-2">
 
+        <input class="buds" type="button" onClick="location.href='/login'" value="Buds" />
+        <input class="games" type="button" onClick="location.href='/sign-up'" value="Games" />
+
+      </div>
     </div>
-      <!-- info -->
-
-    </div>
-
-
-  <!-- back button -->
-  <footer>
-    <a href="/index.html" class="back">Back Home</a>
-  </footer> 
-  
-</body>
-<%- include('partials/footer.ejs') %> 
+  </body>
+  <%- include('partials/footer.ejs') %>
