@@ -122,6 +122,15 @@ exports.findOne = (req, res) => {
         });
 };
 
+// load buds
+
+// exports.loadBuds = async (req, res) => {
+//     const id = req.session.user_id;
+//     console.log(`findOne: ${id}`);
+//     var userData = await User.findByPk(id)
+//     res.render('buds', { data: userData });
+// }
+
 // Retrieve all Users from the database.
 exports.findAll = (req, res) => {
 

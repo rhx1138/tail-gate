@@ -1,26 +1,27 @@
-<%- include('partials/header.ejs') %>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <title>Gameday</title>
+</head>
 
 <body class="buds">
- 
   <header>
-    <% if (data && data.username) { %>
     <img class="profile-logo" src="/assets/images/giants.png" />
-    <h1 class="profile-name-buds">
-      <%= data.username %>
-        <div style="font-size: 15px;"><a href="/logout">Logout</a></div>
-        <% } %>
-    </div>
-    </h1>
+    <h1 class="profile-name-buds">Bobby B.</h1>
   </header>
   <nav>
     <ul>
-
-      <li><a href="/profile.html" class="current">Profile</a></li>
-      <li><a href="/public/confirm.html">Games</a></li>
-      <li><a href="/buds">Buds</a></li>
+      <li><a href="/profile.html">Profile</a></li>
+      <li><a href="/games.html">Games</a></li>
+      <li><a href="/buds.html" class="current">Buds</a></li>
     </ul>
   </nav>
-  <!-- wrapper -->
+
   <div class="centered">
 
     <section class="cards">
@@ -68,11 +69,11 @@
     </section>
   </div>
 
-
   <!-- back button -->
   <footer>
-    <a href="/logout" class="back">Back Home</a>
-  </footer>
+    <a href="/index.html" class="back">Back Home</a>
+  </footer> 
 
 </body>
-<%- include('partials/footer.ejs') %>
+
+</html>

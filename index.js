@@ -23,6 +23,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(session({ secret: process.env.SESSION_TOKEN }));
 
 
+
 db.sequelize.sync()
   .then(() => {
     console.log("Synced db.");
@@ -46,6 +47,13 @@ app.post("/sign-up", userController.doSignup);
 app.get("/profile", auth.isLogin, userController.loadProfile);
 app.get("/logout", auth.isLogin, userController.logout);
 
+// route for profile pages
+
+app.get('/views/buds.ejs',function(req,res,next){
+  res.render('/buds');
+ });
+
+ // for static pages
 app.use(express.static("public"));
 
 app.use("/api/users", auth.isLogin, userRoutes);
