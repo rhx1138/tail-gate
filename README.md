@@ -8,7 +8,7 @@ The social media app named "Gameday" is the social network for sports fans.
  
 # Link to Website
 
-[App Website](https://website.netlify.app/)
+[App Website](https://tail-gate.netlify.app/)
 
 
 # Table of Contents
