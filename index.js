@@ -47,10 +47,10 @@ app.post("/sign-up", userController.doSignup);
 app.get("/profile", auth.isLogin, userController.loadProfile);
 app.get("/logout", auth.isLogin, userController.logout);
 
-// route for profile pages
+// routes for profile pages
 
-app.get('/views/buds.ejs',function(req,res,next){
-  res.render('/buds');
+app.get("/buds",function(req,res,next){
+  res.render("buds");
  });
 
  // for static pages
