@@ -1,0 +1,45 @@
+<%- include('partials/header.ejs') %>
+
+<body class="buds">
+    <% if (data && data.username) { %>
+    <header>
+        <img class="profile-logo" src="/assets/images/giants.png" />
+        <h1 class="profile-name-buds">  <%= data.username %></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/games">Games</a></li>
+            <li><a href="/buds" class="current">Buds</a></li>
+        </ul>
+    </nav>
+    <!-- wrapper -->
+    <div class="main-profile-wrapper">
+        <!-- image left -->
+        <div class="left-column">
+            <img class="profile-pic" src="/assets/images/bud1.jpg">
+        </div>
+       
+        <div class="right-column">
+            <h1 class="full-name">
+                <%= data.username %>
+            </h1>
+            <p>Da Bears</p>
+            <p>Attended: 48 Games</p>
+            <p>City: Indianpolis, IN</p>
+            <p>AM: Loyola University</p>
+
+        </div>
+        <% } %>
+        <!-- info -->
+
+    </div>
+
+
+    <!-- back button -->
+    <footer>
+        <a href="/index.html" class="back">Back Home</a>
+    </footer>
+
+</body>
+<%- include('partials/footer.ejs') %>

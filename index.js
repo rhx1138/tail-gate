@@ -48,6 +48,7 @@ app.get("/profile", auth.isLogin, userController.loadProfile);
 app.get("/logout", auth.isLogin, userController.logout);
 app.get("/buds", auth.isLogin, userController.loadBuds);
 app.get("/games", auth.isLogin, userController.loadGames);
+app.get("/buds/:id", auth.isLogin, userController.loadBud);
 
 
 app.use(express.static("public"));

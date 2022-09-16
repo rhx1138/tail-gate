@@ -83,6 +83,13 @@ exports.loadGames = async (req, res) => {
     res.render('games', { data: userData });
 }
 
+exports.loadBud = async (req, res) => {
+    const id = req.params.id;
+    console.log(`findOne: ${id}`);
+    var userData = await User.findByPk(id)
+    res.render('bud1', { data: userData });
+}
+
 exports.logout = async (req, res) => {
     req.session.destroy();
     res.redirect('/');
