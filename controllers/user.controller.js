@@ -69,6 +69,20 @@ exports.loadProfile = async (req, res) => {
     res.render('profile', { data: userData });
 }
 
+exports.loadBuds = async (req, res) => {
+    const id = req.session.user_id;
+    console.log(`findOne: ${id}`);
+    var userData = await User.findByPk(id)
+    res.render('buds', { data: userData });
+}
+// before rendering the view gets this data
+exports.loadGames = async (req, res) => {
+    const id = req.session.user_id;
+    console.log(`findOne: ${id}`);
+    var userData = await User.findByPk(id)
+    res.render('games', { data: userData });
+}
+
 exports.logout = async (req, res) => {
     req.session.destroy();
     res.redirect('/');

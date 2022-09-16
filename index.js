@@ -46,14 +46,10 @@ app.get("/sign-up", userController.loadSignup);
 app.post("/sign-up", userController.doSignup);
 app.get("/profile", auth.isLogin, userController.loadProfile);
 app.get("/logout", auth.isLogin, userController.logout);
+app.get("/buds", auth.isLogin, userController.loadBuds);
+app.get("/games", auth.isLogin, userController.loadGames);
 
-// routes for profile pages
 
-app.get("/buds",function(req,res,next){
-  res.render("buds");
- });
-
- // for static pages
 app.use(express.static("public"));
 
 app.use("/api/users", auth.isLogin, userRoutes);
