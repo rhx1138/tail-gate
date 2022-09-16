@@ -1,0 +1,50 @@
+<%- include('partials/header.ejs') %>
+
+<body class="buds">
+  <header>
+    <% if (data && data.username) { %>
+      <img class="profile-logo" src="/assets/images/giants.png" />
+      <h1 class="profile-name-buds">
+        <%= data.username %>
+          <div style="font-size: 15px;"><a href="/logout">Logout</a></div>
+          <% } %>
+      </div>
+      </h1>
+  </header>
+  <nav>
+    <ul>
+
+      <li><a href="/profile">Profile</a></li>
+      <li><a href="/games" class="current">Games</a></li>
+      <li><a href="/buds">Buds</a></li>
+    </ul>
+  </nav>
+
+  <!-- wrapper -->
+  <div class="main-profile-wrapper">
+    <!-- image left -->
+    <div class="left-column">
+      <img class="games-icon" src="/assets/images/giants.png">
+      <p class="games-text">Giants</p>
+    </div>
+    <div class="middle-column">
+      <p class="game-date">Sun, Oct 11</p>
+      <p>Vs.</p>
+    </div>
+    <div class="right-column right-column-games">
+
+      <img class="games-icon" src="/assets/images/colts.png">
+      <p class="games-text">Colts</p>
+
+    </div>
+    <!-- info -->
+
+  </div>
+
+
+  <!-- back button -->
+  <footer>
+    <a href="/logout" class="back">Back Home</a>
+  </footer>
+</body>
+<%- include('partials/footer.ejs') %> 

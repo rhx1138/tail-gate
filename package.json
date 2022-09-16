@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "The social media app named \"Gameday\" is the social network for sports fans.",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "start": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -19,8 +19,15 @@
   },
   "homepage": "https://github.com/rhx1138/tail-gate#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "ejs": "^3.1.8",
     "express": "^4.18.1",
-    "mysql": "^2.18.1"
+    "express-session": "^1.17.3",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.4"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
